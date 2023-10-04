@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: skyblue;
+    padding: 19px 12px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 0 13px;
+
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+ul > li > a:hover{
+    color: gray;
+}
+
+main{
+    min-height: 88vh;
+    
+}
+
+.logo img{
+    width: 30px;
+}
+
+.logo span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container{
+    background-color: azure;
+    margin: auto;
+    padding: 9px 15px;
+}
+
+.container h1{
+    padding: 12px 0;
+}
+
+input[type='email']{
+    min-width: 244px;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+#resultsCont div::first-letter{
+    text-transform: uppercase;
+}
+
+
+.btn{
+    background-color: blanchedalmond;
+    color: black;
+    padding: 9px 12px;
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultsCont{
+    margin-top: 10px;
+}
+
+footer{
+    background-color: skyblue;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: azure;
+    }
+
+    .container{
+        font-size: 12px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .logo{
+        padding: 6px 0;
+        font-size: 12px;
+    }
+
+    .logo span{
+        font-weight: bold;        
+    }
+
+    .logo img{
+        width: 30px;
+    }
+
+
+}
